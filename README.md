@@ -1,2 +1,3 @@
 To Do List Preview
-![Ana Sayfa](img/Ekran görüntüsü 2024-04-18 183814.png)
+![Preview](img/Ekran%20görüntüsü%202024-04-18%20183814.png)
+
