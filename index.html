@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap   -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    
+    <!-- Fonts -->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css"> <!-- style dosyamı en alta koydum ki bootstrap dosyalarını ezmesin -->
+</head>
+<body>
+    <!-- As a heading -->
+<nav class="navbar bg-dark">
+    <div class="container-fluid">
+      <span class="navbar-brand mb-0 h1 text-white baslik">To Do List</span>
+    </div>
+  </nav>
+
+  <div class="container mt-5">
+    <div class="row">
+        <div class="col-12">
+            <div class="card w-100">
+                <div class="card-header">
+                    <h2 class="card-title">Görev Oluştur</h2>
+                  </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-8">
+                            <input type="text" placeholder="Görev Ekle" class="form-control" id="newTaskName">
+                        </div>
+                        <div class="col-4">
+                            <a href="#" class="btn btn-outline-dark w-100 btn-add-task-list" id="btnAddTaskList">Görev Listesine Ekle <i class="fa fa-plus ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="card w-100 mt-5">
+                <div class="card-header">
+                    <div class="row">
+                        <div class="col-3"><h2 class="card-title mb-0">Görev Listesi</h2></div>
+                        <div class="col-3">
+                            <a href="javascript:void(0)" class="btn btn-success w-100" id="btnCompletedTask">Tamamlandı</a>
+                        </div>
+                        <div class="col-3">
+                            <a href="javascript:void(0)" class="btn btn-danger w-100" id="btnRemoveTask">Listeden Çıkar</a>
+                        </div>
+                        <div class="col-3">
+                            <a href="javascript:void(0)" class="btn btn-primary w-100" id="btnSelectAll">Tümünü Seç</a>
+                        </div>
+                    </div>
+
+                <div class="card-body">
+                    <div class="row">
+                        <ul class="list-group p-3" id="taskListUl">
+                            <!-- <li class="list-group-item task-list-item" id="">
+                                <input type="checkbox" class="select-task me-1" id="selectTask">
+                                <label for="selectTask">Lorem ipsum</label>
+                                <a href=""><i class="fa fa-trash-o float-end me-2 trashed"></i></a>
+                            </li>
+                            -->
+                          </ul>
+                    </div>
+                </div>
+            </div>
+              </div>
+
+              <div class="card w-100 mt-5">
+                <div class="card-header">
+                    <div class="row">
+                        <div class="col-6"><h2 class="card-title mb-0">Tamamlanan Görevler</h2></div>
+                        <div class="col-6">
+                            <a href="javascript:void(0)" class="btn btn-warning w-100" id="clearList">Tümünü Sil</a>
+                    </div>
+                  </div>
+                <div class="card-body">
+                    <div class="row">
+                        <ul class="list-group p-3" id="completedListUl">
+                            <!-- <li class="list-group-item task-list-item px-3">
+                                <label>Lorem ipsum</label>
+                            -->
+                          </ul>
+                    </div>
+                </div>
+              </div>
+        </div>
+    </div> 
+  </div>
+
+<footer class="bg-dark h-50px mt-5">
+    <p class="m-0 text-white text-center footer-text">
+        &copy; 2024
+    </p>
+</footer>
+
+
+
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>
